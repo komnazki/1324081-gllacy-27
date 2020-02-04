@@ -2,35 +2,45 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Gllacy</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a>
-        <img scr="img/index-logo.svg" alt="Логотип Глейси">
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-header__logo">
+        <img scr="img/index-logo.svg" alt="Логотип Glacy Shop" width="154" height="64">
       </a>
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="info.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О компании</a></li>
+      <ul class="site-navigation">
+        <li class="site-navigation__catalog"><a href="catalog.html">Каталог</a></li>
+        <li class="site-navigation__info"><a href="info.html">Доставка и оплата</a></li>
+        <li class="site-navigation__about"><a href="about.html">О компании</a></li>
       </ul>
-      <ul>
-        <li><button type="button">Поиск</button></li>
-        <li><button type="button">Вход</button></li>
-        <li><button type="button">Корзина</button></li>
+      <ul class="user-navigation">
+        <li class="user-navigation__item">
+          <a href="#nowhere" aria-label="Поиск товара" class="user-navigation__search"></a>
+          <!--форма поиска-->
+        </li>
+        <li class="user-navigation__item">
+          <a href="#nowhere" aria-label="Вход на сайт" class="user-navigation__login">
+          ::before
+          "Вход"</a>
+        <!--форма поиска-->
+        </li>
+        <li  class="user-navigation__item">
+          <a href="#nowhere" aria-label="Корзина" class="user-navigation__basket">
+            ::before
+            "Пусто"
+          </a>
+        </li>
       </ul>
     </nav>
+    <p class="info">
+      <span class="info-schedule">С 10:00 до 20:00, ежедневно</span>
+      <span class="info-phone">8 812 450-25-25</span>
+    </p> 
   </header>
   <main>
-    <h1>Глейси</h1>
-    <div>
-      <h2>Расписание</h2>
-      <p>С 10:00 до 20:00, ежедневно</p>
-      <h2>Телефон</h2>
-      <p>8 812 450-25-25</p>
-    </div> 
-    <section>
+    <section class="main-slider">
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
       <figure>
         <img src="img/index-icecream1.jpg" width="" height="" alt="Два рожка с шариками мороженого бежевого и красного цвета">
@@ -46,45 +56,55 @@
       </button>
       <a href="shopcart.html">Давайте оба!</a>
     </section>
-    <article>
-      <h2>Малинка даром!</h2>
-      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a href="catalog-fruit.html">Хочу варенье!</a>
-    </article>
-    <article>
-      <h2>Шоколадки даром!</h2>
-      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      <a href="catalog-plombir.html">Хочу варенье!</a>
-    </article>
+    <div class="action">
+      <article>
+        <h2>Малинка даром!</h2>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a href="catalog-fruit.html">Хочу варенье!</a>
+      </article>
+      <article>
+        <h2>Шоколадки даром!</h2>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a href="catalog-plombir.html">Хочу варенье!</a>
+      </article>
+    </div>
     <article>
       <h2>Хиты продаж</h2>
       <ul>
           <li>
-              <a href="catalog-item-1.html"></h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
               <a href="catalog-item-1.html">
-                    <img src="img/prodact-1.jpg" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  </a>
+                  <img src="img/icecream11.jpg" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
+              </a>
+              <a href="catalog-item-1.html">
+                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              </a>
               <p>310 р/кг</p>
           </li>
           <li>
-              <h3><a href="catalog-item-2.html">Сливочно-кофейное с кусочками шоколада</a></h3>
               <a href="catalog-item-2.html">
-                    <img src="img/prodact-2.jpg" alt="Мороженое сливочно-кофейное с кусочками шоколада">
-                  </a>
+                 <img src="img/icecream12.jpg" alt="Мороженое сливочно-кофейное с кусочками шоколада">
+              </a>
+              <a href="catalog-item-2.html">
+                <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              </a>
               <p>380 р/кг</p>
           </li>
           <li>
-              <h3><a href="catalog-item-3.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
               <a href="catalog-item-3.html">
-                    <img src="img/prodact-3.jpg" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада">
-                  </a>
+                 <img src="img/icecream13.jpg" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада">
+              </a>
+              <a href="catalog-item-3.html">
+                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              </a>
               <p>355 р/кг</p>
           </li>
           <li>
-              <h3><a href="catalog-item-4.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
               <a href="catalog-item-4.html">
-                    <img src="img/prodact-4.jpg" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
-                  </a>
+                 <img src="img/icecream14.jpg" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
+              </a>
+              <a href="catalog-item-4.html">
+                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              </a>
               <p>415 р/кг</p>
           </li>
         </ul>
@@ -98,15 +118,17 @@
         <li><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
       </ul> 
     </section>
-    <article>
-      <h2>Блог</h2>
-      <p><a href="blog.html">10 способов сервировки фруктовых щербетов</a></p>
-    </article>
-    <section>
-      <h2>Подписка</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, чтоу  нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!--Здесь будет форма-->
-    </section>
+    <div>
+      <article>
+        <h2>Блог</h2>
+        <p><a href="blog.html">10 способов сервировки фруктовых щербетов</a></p>
+      </article>
+      <article>
+        <h2>Подписка</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, чтоу  нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <!--Здесь будет форма-->
+      </article>
+    <div>
     <section>
       <h2>Контакты</h2>
       <p>
