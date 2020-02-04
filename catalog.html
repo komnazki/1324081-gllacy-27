@@ -1,129 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Gllacy</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img scr="img/index-logo.svg" alt="Логотип Глейси">
+  <header class="main-header">
+    <nav class="main-nav">
+      <a class="main-header__logo">
+        <img scr="img/index-logo.svg" alt="Логотип Glacy Shop" width="154" height="64">
       </a>
-      <ul>
-        <li class=""><a href="catalog.html">Каталог</a></li>
-        <li><a href="info.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О компании</a></li>
+      <ul class="site-navigation">
+        <li class="site-navigation__catalog"><a href="#">Каталог</a></li>
+        <li class="site-navigation__info"><a href="info.html">Доставка и оплата</a></li>
+        <li class="site-navigation__about"><a href="about.html">О компании</a></li>
       </ul>
-      <ul>
-        <li><button type="button">Поиск</button></li>
-        <li><button type="button">Вход</button></li>
-        <li><button type="button">Корзина</button></li>
+      <ul class="user-navigation">
+        <li class="user-navigation__item">
+          <a href="#nowhere" aria-label="Поиск товара" class="user-navigation__search"></a>
+          <!--форма поиска-->
+        </li>
+        <li class="user-navigation__item">
+          <a href="#nowhere" aria-label="Вход на сайт" class="user-navigation__login">
+          ::before
+          "Вход"</a>
+        <!--форма поиска-->
+        </li>
+        <li  class="user-navigation__item">
+          <a href="#nowhere" aria-label="Корзина" class="user-navigation__basket">
+            ::before
+            "Пусто"
+          </a>
+        </li>
       </ul>
     </nav>
+    <p class="info">
+      <span class="info-schedule">С 10:00 до 20:00, ежедневно</span>
+      <span class="info-phone">8 812 450-25-25</span>
+    </p> 
   </header>
   <main>
       <h1>Сливочное мороженое</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li></li>>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a>Сливочное</a></li>
       </ul>
-      <div>
-        <h2>Расписание</h2>
-        <p>С 10:00 до 20:00, ежедневно</p>
-        <h2>Телефон</h2>
-        <p>8 812 450-25-25</p>
-      </div>       
-      <section>
+      <div class="filters-catalog">
         <h2>Фильтр товаров</h2>
         <!--Здесь будет форма-->
-      </section>  
+      </div>  
       <article>
         <h2>Каталог</h2>
         <ul>
-            <li>
-                <a href="catalog-item-1.html"></h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></a>
+            <li>                
                 <a href="catalog-item-1.html">
-                      <img src="img/prodact-1.jpg" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
-                    </a>
+                   <img src="img/icecream11.jpg" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </a>
+                <a href="catalog-item-1.html">
+                  <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                </a>
                 <p>310 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-2.html">Сливочно-кофейное с кусочками шоколада</a></h3>
                 <a href="catalog-item-2.html">
-                      <img src="img/prodact-2.jpg" alt="Мороженое сливочно-кофейное с кусочками шоколада">
-                    </a>
+                  <img src="img/icecream12.jpg" alt="Мороженое сливочно-кофейное с кусочками шоколада">
+                </a>
+                <a href="catalog-item-2.html">
+                  <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                </a>
                 <p>380 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-3.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                 <a href="catalog-item-3.html">
-                      <img src="img/prodact-3.jpg" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада">
-                    </a>
+                  <img src="img/icecream13.jpg" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада">
+                </a>                    
+                <a href="catalog-item-3.html">
+                  <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                </a>
                 <p>355 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-4.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
                 <a href="catalog-item-4.html">
-                      <img src="img/prodact-4.jpg" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
-                    </a>
+                  <img src="img/icecream14.jpg" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
+                </a>
+                <a href="catalog-item-4.html">
+                  <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+                </a>
                 <p>315 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-5.html">Сливочное с брусничным джемом</a></h3>
                 <a href="catalog-item-5.html">
-                      <img src="img/prodact-5.jpg" alt="Мороженое сливочное с брусничным джемом">
-                    </a>
+                  <img src="img/icecream21.jpg" alt="Мороженое сливочное с брусничным джемом">
+                </a>
+                <a href="catalog-item-5.html">
+                  <h3>Сливочное с брусничным джемом</h3>
+                </a>
                 <p>325 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-6.html">Сливочно-черничное с цельными ягодами черники</a></h3>
                 <a href="catalog-item-6.html">
-                      <img src="img/prodact-6.jpg" alt="Мороженое сливочно-черничное с цельными ягодами черники">
-                    </a>
+                    <img src="img/icecream22.jpg" alt="Мороженое сливочно-черничное с цельными ягодами черники">
+                </a>                
+                <a href="catalog-item-6.html">
+                  <h3>Сливочно-черничное с цельными ягодами черники</h3>
+                </a>
                 <p>410 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-7.html">Сливочно-лимонное с карамельной присыпкой</a></h3>
                 <a href="catalog-item-7.html">
-                      <img src="img/prodact-7.jpg" alt="Мороженое сливочно-лимонное с карамельной присыпкой">
-                    </a>                
+                  <img src="img/icecream23.jpg" alt="Мороженое сливочно-лимонное с карамельной присыпкой">
+                </a>
+                <a href="catalog-item-7.html">
+                  <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+                </a>             
                 <p>375 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-8.html">Сливочное с шоколадной стружкой</a></h3>
                 <a href="catalog-item-8.html">
-                      <img src="img/prodact-8.jpg" alt="Мороженое сливочное с шоколадной стружкой">
-                    </a>
+                  <img src="img/icecream24.jpg" alt="Мороженое сливочное с шоколадной стружкой">
+                </a>                
+                <a href="catalog-item-8.html">
+                  <h3>Сливочное с шоколадной стружкой</h3>
+                </a>
                 <p>320 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-9.html">Сливочно-ванильное с кусочками шоколада</a></h3>
                 <a href="catalog-item-9.html">
-                      <img src="img/prodact-9.jpg" alt="Мороженое сливочно-ванильное с кусочками шоколада">
-                    </a>
+                  <img src="img/icecream31.jpg" alt="Мороженое сливочно-ванильное с кусочками шоколада">
+                </a>
+                <a href="catalog-item-9.html">
+                  <h3>Сливочно-ванильное с кусочками шоколада</h3>
+                </a>
                 <p>440 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-10.html">Сливочное с ментоловым сиропом</a></h3>
                 <a href="catalog-item-10.html">
-                      <img src="img/prodact-10.jpg" alt="Мороженое сливочное с ментоловым сиропом">
-                    </a>
+                  <img src="img/icecream32.jpg" alt="Мороженое сливочное с ментоловым сиропом">
+                </a>
+                <a href="catalog-item-10.html">
+                  <h3>Сливочное с ментоловым сиропом</h3>
+                </a>
                 <p>435 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-11.html">Сливочное с кусочками чёрного шоколада</a></h3>
                 <a href="catalog-item-11.html">
-                      <img src="img/prodact-11.jpg" alt="Мороженое сливочное с кусочками чёрного шоколада">
-                    </a>
+                    <img src="img/icecream33.jpg" alt="Мороженое сливочное с кусочками чёрного шоколада">
+                </a>
+                <a href="catalog-item-11.html">
+                  <h3>Сливочное с кусочками чёрного шоколада</h3>
+                </a>
                 <p>355 р/кг</p>
             </li>
             <li>
-                <h3><a href="catalog-item-12.html">Сливочное с мятным сиропом</a></h3>
                 <a href="catalog-item-12.html">
-                      <img src="img/prodact-12.jpg" alt="Мороженое сливочное с мятным сиропом">
-                    </a>
+                   <img src="img/icecream34.jpg" alt="Мороженое сливочное с мятным сиропом">
+                </a>
+                <a href="catalog-item-12.html">
+                  <h3>Сливочное с мятным сиропом</h3>
+                </a>
                 <p>420 р/кг</p>
             </li>
         </ul>
